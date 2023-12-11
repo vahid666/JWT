@@ -1,0 +1,19 @@
+server:
+  port: 5020
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/uni
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+
+javatar:
+  app:
+    jwtSecret: ======================Javatar=Spring===========================
+    jwtExpirationMs: 86400000
